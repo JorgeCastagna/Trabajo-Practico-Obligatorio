@@ -1,0 +1,43 @@
+a{text-decoration: none;
+
+}
+li{
+    background-color: rgb(245, 232, 159);
+    display: inline-block;
+    padding: 10px;
+    margin:0 2rem 0 2rem;
+    color: rgb(244, 235, 235);
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align:center;
+}
+
+li:hover {
+   background-color: #e9e062;
+   cursor:pointer;
+
+}
+body{
+    background-color:#cfe6cf;
+    margin: 0; 
+   }
+h1{text-align: center;}
+ 
+main{
+    height:10%;
+
+ }
+ .principal{
+    background-image: url(./assets/imagenes/IMG-20180104-WA0000.jpg);
+    background-position: center;
+}
+ .comentario{
+    border:1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    background-color:rgb(206, 230, 222);
+    left:35%;
+    position:fixed
+
+ }
