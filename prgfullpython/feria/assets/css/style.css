@@ -39,8 +39,8 @@ header a:hover {
    border-radius: 5px;
  }
 
- .contenedor con-sidebar{
-    background-image: url(./assets/imagenes/IMG-20180104-WA0000.jpg);
+ #contenedor con-sidebar{
+    background-image: url(./assets/imagenes/zapallitos.jpg);
     background-position: center;
 }
  .comentario{
