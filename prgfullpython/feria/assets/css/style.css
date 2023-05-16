@@ -1,43 +1,75 @@
-a{text-decoration: none;
-
+* {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   box-sizing: border-box;
 }
-li{
-    background-color: rgb(245, 232, 159);
+
+h1{
+   padding: 2rem;
+   font-size: 3rem;
+}
+a{
+   font-size: 1.5rem;
+   text-decoration: none;
+   padding: 30px;
+}
+
+body header nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 10px 10px;
+}
+
+body header nav a{
     display: inline-block;
     padding: 10px;
     margin:0 2rem 0 2rem;
-    color: rgb(244, 235, 235);
-    border-radius: 10px;
-    border: 1px solid black;
     text-align:center;
 }
 
-li:hover {
-   background-color: #e9e062;
+header a:hover {
+   border: white 2px solid;
+   border-radius: 20px; 
+   background-color: lightgrey;
    cursor:pointer;
-
 }
-body{
-    background-color:#cfe6cf;
-    margin: 0; 
-   }
-h1{text-align: center;}
- 
-main{
-    height:10%;
-
+ .foto_portada{
+   margin: 10px;
+   border-radius: 5px;
  }
- .principal{
+
+ .contenedor con-sidebar{
     background-image: url(./assets/imagenes/IMG-20180104-WA0000.jpg);
     background-position: center;
 }
  .comentario{
-    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid lightblue;
     border-radius: 20px;
-    height: 500px;
-    width: 500px;
+    width: 80%;
     background-color:rgb(206, 230, 222);
-    left:35%;
-    position:fixed
+    margin: 5% 10% 5%;
 
  }
+
+
+ 
+header, footer{
+   background-color: lightblue;
+   border-radius: 0.5rem;
+   color: beige;
+   text-align: center;
+}
+
+
+@media (min-width: 480px) {
+   .con-sidebar {
+       display: grid;
+       grid-template-columns: 1fr 5fr;
+       column-gap: 4rem;
+   }
+}

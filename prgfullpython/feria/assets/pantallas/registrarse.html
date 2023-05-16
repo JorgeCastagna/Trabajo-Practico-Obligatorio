@@ -11,25 +11,60 @@
 </head>
 <body>
     <header>
-        <h1>Registrarse</h1>
+        <h1 >Feria Franca Empedrado</h1>
         <hr>
-        
+
         <nav>
-            <ul>
-                <li><a href="../../index.html">Inicio </a></li>
-                <li><a href=".././pantallas/sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href=".././pantallas/productos.html">Productos</a></li>
-                <li><a href=".././pantallas/contacto.html">Contacto</a></li>
-                <li><a href=".././pantallas/carrito_de_compras.html">Carrito de compras</a></li>
-                <li><a href=".././pantallas/registrarse.html">Registrarse</a></li>
-            </ul>
+            <a href="/feria/index.html">Inicio </a>
+            <a href="sobrenosotros.html">Sobre nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito_de_compras.html">Tienda</a>
         </nav>
     </header>
     <main>
-       <p>registrarse</p> 
+        <section class="formulario">
+            <h2>Formulario de registro</h2>
+            <form>
+                <label for="firstname">Nombre:</label> <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..."><br><br>
+                <label for="lastname">Apellido:</label> <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..."><br><br>
+                <label for="street">Direccion:</label> <input type="text" name="street" placeholder="Ingrese su calle aqui..."><br><br>
+                <label for="city">Ciudad:</label> <input type="text" name="city" placeholder="Ingrese ciudad aqui..."><br><br>
+                <label for="zipcode">Codigo postal:</label> <input type="text" name="zipcode" placeholder="Ingrese codigo postal..."><br><br>
+                <label for="birthDate">Fecha de nacimiento (dd/mm/yyyy):</label> <input type="date" name="birthDate" placeholder="dd/mm/yyyy"><br><br>
+                
+                <p>
+                    Genero:
+                    <input type="radio" name="gender" value="Hombre" checked>Hombre
+                    <input type="radio" name="gender" value="Mujer">Mujer
+                    <input type="radio" name="gender" value="Otro">Otro
+                </p>
+                <p>
+                    Estudios:
+                    <input type="checkbox" name="estudio" value="primario">Primarios
+                    <input type="checkbox" name="estudio" value="secundario">Secundarios
+                    <input type="checkbox" name="estudio" value="terciario">Terciarios
+                    <input type="checkbox" name="estudio" value="universitario">Universitarios
+                    <input type="checkbox" name="estudio" value="otro">Otro
+                </p>
+                <input type="submit"value="Enviar">
+            </form>
+            <p>Si Ud presiona enviar, los datos seran enviados a la pagina show_data.html</p>
+    
+            
+        </section>
     </main>  
 </body>
 <footer>
-
+    <br>
+        <div>
+            <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden=true></i></a>
+            <a href="http://www.facebook.com/bernardo.javier.garcia" target="_blank"><i class="fa fa-facebook" aria-hidden=true></i></a>
+            <a href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden=true></i></a>
+            <a href="http://www.instagram.com/bjavierg/" target="_blank"><i class="fa fa-instagram" aria-hidden=true></i></a>
+            <a href="https://www.linkedin.com/in/bernardo-javier-garcia-75ba9925a/" target="_blank"><i class="fa fa-linkedin" aria-hidden=true></i></a>
+        </div>
+        <br>
+        <p"><b>Derechos reservados @2023</b></p>
 </footer>
 </html>
