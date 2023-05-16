@@ -39,7 +39,7 @@ header a:hover {
    border-radius: 5px;
  }
 
- #contenedor con-sidebar{
+ .contenedor con-sidebar{
     background-image: url(./assets/imagenes/zapallitos.jpg);
     background-position: center;
 }
@@ -73,3 +73,26 @@ header, footer{
        column-gap: 4rem;
    }
 }
+.formulario
+ .carrousel{
+    margin: 1rem;
+    border : var(--border)
+
+    }
+   
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+     
+    }
+    
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      
+    }   
