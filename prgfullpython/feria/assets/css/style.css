@@ -8,9 +8,10 @@ h1{
    font-size: 3rem;
 }
 a{
-   font-size: 1.5rem;
+   font-size: 1rem;
    text-decoration: none;
-   padding: 30px;
+   padding: 10px;
+   color: rgb(78, 35, 35);
 }
 
 body header nav{
@@ -29,9 +30,9 @@ body header nav a{
 }
 
 header a:hover {
-   border: white 2px solid;
+   border: rgb(145, 120, 120) 2px outset;
    border-radius: 20px; 
-   background-color: lightgrey;
+   background-color: rgb(145, 120, 120);
    cursor:pointer;
 }
  .foto_portada{
@@ -48,10 +49,10 @@ header a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    border: 3px solid lightblue;
+    border: 3px solid rgb(110, 200, 64);
     border-radius: 20px;
     width: 80%;
-    background-color:rgb(206, 230, 222);
+    background-color:rgb(110, 200, 64);
     margin: 5% 10% 5%;
 
  }
@@ -59,9 +60,9 @@ header a:hover {
 
  
 header, footer{
-   background-color: lightblue;
+   background-color: rgb(110, 200, 64);
    border-radius: 0.5rem;
-   color: beige;
+   color: rgb(237, 237, 175);
    text-align: center;
 }
 
