@@ -96,3 +96,15 @@ header, footer{
       text-align: center;
       
     }   
+    iframe{
+      display:flex;
+      background-color: rgb(133, 133, 221);
+      padding: 2px;
+      margin: 10px 40px;
+      
+    }
+    .fiel{
+      display:flex;
+      width: 40%;
+      margin: 5px 30% ;
+    }
