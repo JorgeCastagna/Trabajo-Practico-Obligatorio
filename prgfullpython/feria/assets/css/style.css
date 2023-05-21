@@ -108,3 +108,33 @@ header, footer{
       width: 40%;
       margin: 5px 30% ;
     }
+    .fiel fieldset{
+      padding-left:30px;
+      border:2px solid rgb(175, 163, 231);
+      border-radius: 50px;
+      background-color:rgb(238, 243, 194) ;
+     
+    }
+    .fiel fieldset legend{
+      border:2px solid rgb(167, 244, 148);
+      background:rgb(216, 250, 130);
+      border-radius: 20px;
+       
+
+    }
+    
+    .formulario fieldset{
+      margin-left:25% ;
+      padding-left:70px;
+      border:2px solid rgb(105, 104, 19);
+      border-radius: 50px;
+      background:rgb(214, 229, 175);
+      width: 50%;
+      
+    }
+    .formulario fieldset legend{
+      
+      border:2px solid rgb(105, 104, 19);
+      background:rgb(216, 250, 130);
+      border-radius: 20px;
+    }
