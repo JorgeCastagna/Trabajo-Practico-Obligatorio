@@ -1,4 +1,7 @@
 * {
+   padding: 0;
+   margin: 0 ;
+   box-sizing: border-box;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    box-sizing: border-box;
 }
@@ -8,6 +11,7 @@ h1{
    font-size: 3rem;
 }
 a{
+   text-decoration: none;
    font-size: 1.5rem;
    text-decoration: none;
    padding: 30px;
@@ -74,11 +78,10 @@ header, footer{
    }
 }
 .formulario
- .carrousel{
-    margin: 1rem;
-    border : var(--border)
-
-    }
+ {
+  margin: 1rem;
+  border : var(--border)
+  }
    
     .grid-container {
       display: grid;
@@ -138,3 +141,44 @@ header, footer{
       background:rgb(216, 250, 130);
       border-radius: 20px;
     }
+    #conteItemscarrousel{
+      border: 5px solid black;
+      height: 500px;
+      overflow: hidden;
+    }
+      .itemCarrousel {
+        border: 1px solid black;
+        height: 100%;
+        position: relative;
+      }
+    
+      .tarjetaCarrousel{
+        height: 100%;
+      }
+    
+      .flechasCarrousel{
+        
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      i{
+        color: white;
+      }
+      #contePuntos{
+        background-color: rgb(220, 220, 220);
+        display: flex;
+        justify-content: space-around;
+      }
+     #contePuntos > a{
+       font-size: 2em;
+     }
+     img{
+      width: 75%;
+      height: 100%;
+      }     
