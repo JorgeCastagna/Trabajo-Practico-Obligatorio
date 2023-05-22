@@ -142,19 +142,26 @@ header, footer{
       border-radius: 20px;
     }
     #conteItemscarrousel{
-      border: 5px solid black;
-      height: 500px;
+      border: 5px solid rgb(8, 77, 10);
+      height: 400px;
+      width: 60%;
       overflow: hidden;
+      border-radius:50% ;
+      margin: 1rem;
+      margin-left: 20%;
     }
       .itemCarrousel {
-        border: 1px solid black;
+        
         height: 100%;
+        width: 100%;
         position: relative;
       }
     
       .tarjetaCarrousel{
-        height: 100%;
+        
       }
+      
+      
     
       .flechasCarrousel{
         
@@ -167,8 +174,9 @@ header, footer{
         justify-content: space-between;
         padding: 20px;
       }
-      i{
-        color: white;
+      .flechasCarrousel i{
+        color: rgb(246, 242, 242);
+     
       }
       #contePuntos{
         background-color: rgb(220, 220, 220);
@@ -177,8 +185,7 @@ header, footer{
       }
      #contePuntos > a{
        font-size: 2em;
+       color: chartreuse;
+       background-color: black;
      }
-     img{
-      width: 75%;
-      height: 100%;
-      }     
+       
