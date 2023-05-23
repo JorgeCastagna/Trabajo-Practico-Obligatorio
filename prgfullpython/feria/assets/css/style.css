@@ -6,33 +6,48 @@
 h1{
    padding: 2rem;
    font-size: 3rem;
+   text-align: center;
+   color: beige;
+   background-color: rgb(110, 200, 64);
 }
+h2{
+   background-color:rgb(110, 200, 64);
+   color: rgb(78, 35, 35);
+}
+
+.animacion {
+  width: 5%;
+  height: 2vh;
+  background: rgb(110, 200, 64);
+  transition: width 2s, height 2s,background 2s;
+}
+
+.animacion :hover {
+  width: 100%;
+  height: 10vh;
+  background: rgb(78, 35, 35);
+}
+
 a{
-   font-size: 1rem;
+   font-size: 1.2rem;
    text-decoration: none;
    padding: 10px;
    color: rgb(78, 35, 35);
 }
 
-body header nav{
+#navBarId{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:flex-end;
     padding: 10px 10px;
 }
 
-body header nav a{
-    display: inline-block;
-    padding: 10px;
-    margin:0 2rem 0 2rem;
-    text-align:center;
-}
 
-header a:hover {
-   border: rgb(145, 120, 120) 2px outset;
-   border-radius: 20px; 
-   background-color: rgb(145, 120, 120);
+
+a:hover {
+   text-decoration: underline;
+   color: rgb(78, 35, 35);
    cursor:pointer;
 }
  .foto_portada{
@@ -40,9 +55,14 @@ header a:hover {
    border-radius: 5px;
  }
 
- .contenedor con-sidebar{
-    background-image: url(./assets/imagenes/IMG-20180104-WA0000.jpg);
-    background-position: center;
+ .contenedor_con-sidebar{
+   display: flex;
+   flex-wrap: wrap;
+   flex: 1 1 auto;
+   padding: 10px;
+   width: 80%;
+   margin: 2vh 10%;
+
 }
  .comentario{
     display: flex;
@@ -61,7 +81,6 @@ header a:hover {
  
 header, footer{
    background-color: rgb(110, 200, 64);
-   border-radius: 0.5rem;
    color: rgb(237, 237, 175);
    text-align: center;
 }
@@ -74,3 +93,26 @@ header, footer{
        column-gap: 4rem;
    }
 }
+.formulario
+ .carrousel{
+    margin: 1rem;
+    border : var(--border)
+
+    }
+   
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+     
+    }
+    
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      
+    }   
