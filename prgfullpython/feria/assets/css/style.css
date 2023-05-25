@@ -3,7 +3,7 @@
    margin: 0 ;
    box-sizing: border-box;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   box-sizing: border-box;
+   
 }
 
 h1{
@@ -17,8 +17,9 @@ a{
    padding: 30px;
 }
 main{
-  background-image: url(./../../assets/imagenes/feriantes.jpg); 
+  background-image: url(#./../../assets/imagenes/feriantes.jpg); 
   margin: 1% 0 1% 0%;
+  background-size:cover;
   }
 
 body header nav{
@@ -27,6 +28,7 @@ body header nav{
     flex-wrap: wrap;
     justify-content:space-around;
     padding: 1px ;
+
 }
 
 body header nav a{
@@ -51,7 +53,13 @@ header{
   width: 100%;
   height: 180px;
   background-position: center;
+  background-size:cover;
+  color:rgb(230, 240, 231) ;
+  text-align: center;
+  border-radius: 0.5rem;
 }
+
+
  .foto_portada{
    margin: 10px;
    border-radius: 5px;
@@ -77,10 +85,10 @@ header{
 
 
  
-header,main, footer{
+main, footer{
    background-color: lightblue;
    border-radius: 0.5rem;
-   color: rgb(119, 51, 4);
+   color: rgb(15, 15, 4);
    text-align: center;
 }
 
@@ -170,6 +178,12 @@ header,main, footer{
       margin: 1rem;
       margin-left: 20%;
     }
+    #conteItemscarrousel:hover{
+      border-radius: 0% ;
+      transition-delay: linear;
+      transition-duration: 2s;
+      transition-timing-function: ease;
+  }
       .itemCarrousel {
         
         height: 100%;
