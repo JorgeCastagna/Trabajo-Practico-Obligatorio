@@ -13,19 +13,7 @@ h1{
 h2{
    background-color:rgb(110, 200, 64);
    color: rgb(78, 35, 35);
-}
-
-.animacion {
-  width: 5%;
-  height: 2vh;
-  background: rgb(110, 200, 64);
-  transition: width 2s, height 2s,background 2s;
-}
-
-.animacion :hover {
-  width: 100%;
-  height: 10vh;
-  background: rgb(78, 35, 35);
+   text-align: center;
 }
 
 a{
@@ -35,16 +23,21 @@ a{
    color: rgb(78, 35, 35);
 }
 
-#navBarId{
+#navBarId ul{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-end;
     padding: 10px 10px;
 }
+#navBarId li{
+   list-style: none;
+ }
 
-
-
+#navBarId .fa-bars, .fa-times, input[type="checkbox"] {
+   display: none;
+ }
+ 
 a:hover {
    text-decoration: underline;
    color: rgb(78, 35, 35);
@@ -55,64 +48,155 @@ a:hover {
    border-radius: 5px;
  }
 
- .contenedor_con-sidebar{
-   display: flex;
-   flex-wrap: wrap;
-   flex: 1 1 auto;
-   padding: 10px;
-   width: 80%;
-   margin: 2vh 10%;
-
+ .cuerpo-principal {
+   display: inline-block;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
 }
+
  .comentario{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    border: 3px solid rgb(110, 200, 64);
     border-radius: 20px;
     width: 80%;
-    background-color:rgb(110, 200, 64);
     margin: 5% 10% 5%;
 
  }
 
+ .carrousel{
+   align-items: center;
+   background-color: rgb(195, 196, 195);
+}
 
+ .grid-container {
+   box-sizing: content-box;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   justify-content: space-around;
+   margin: 10%;
+   gap: 20px;
+ }
+
+ .grid-container img{
+   height: 300px; 
+   width: 200px;
+ }
  
+ .contenedor_con_sidebar{
+   display: flex;
+   justify-content: space-between;
+}
+.cuerpo-principal {
+   flex-basis: calc(60% - 1rem);
+}
+.sidebar {
+   flex-basis: calc(20% - 1rem);
+}
+ 
+ .formulario{
+   border: black 1px solid;
+   margin: 50px 0 20px 0;
+   padding: 10px;
+ }
+
 header, footer{
    background-color: rgb(110, 200, 64);
    color: rgb(237, 237, 175);
    text-align: center;
 }
 
-
-@media (min-width: 480px) {
-   .con-sidebar {
-       display: grid;
-       grid-template-columns: 1fr 5fr;
-       column-gap: 4rem;
-   }
-}
-.formulario
- .carrousel{
-    margin: 1rem;
-    border : var(--border)
+@media (max-width: 720px){
+   
+   #navBarId a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      max-width: 150px;
+      background: rgb(110, 200, 64);
+      font-variant: small-caps;
 
     }
-   
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: #2196F3;
-      padding: 10px;
-     
+
+    #navBarId ul{
+      display: block;
+    }
+
+    #navBarId li{
+      list-style: none;
     }
     
-    .grid-item {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-      
-    }   
+   #navBarId .fa-bars, .fa-times, input[type="checkbox"] {
+      display: block;
+   }
+
+    #navBarId input[type="checkbox"], #navBarId .fa-bars, #navBarId .fa-times {
+      position: absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+    }
+    
+    #navBarId .fa-bars, #navBarId .fa-times {
+      font-size: 48px;
+      pointer-events: none;
+    }
+    
+    #navBarId input[type="checkbox"] {
+      opacity: 0;
+    }
+    
+    #navBarId {
+      color: rgb(78, 35, 35);
+      position: relative;
+      background: rgb(110, 200, 64);
+      min-height: 48px;
+    }
+    
+    #navBarId nav {
+      display: none;
+    }
+    
+    #navBarId input:checked ~ nav {
+      display: block;
+    }
+    
+    #navBarId input:checked ~ .fa-bars {
+      display: none;
+    }
+    
+    #navBarId input:not(:checked) ~ .fa-times {
+      display: none;
+    }
+    .contenedor_con_sidebar{
+      display: block;
+   }
+}
+   
+
+
+@media (max-width: 1200px) {
+   
+ .grid-container {
+   box-sizing: content-box;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+   margin: 10%;
+   gap: 2px;
+
+    } 
+
+   .grid-container img{
+      height: 200px;
+      width: 135px;
+   }
+ }
