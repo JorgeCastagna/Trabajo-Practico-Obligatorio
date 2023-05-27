@@ -1,251 +1,205 @@
 * {
-   padding: 0;
-   margin: 0 ;
+   
    box-sizing: border-box;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(78, 35, 35);
    
 }
 
-h1{
-   padding: 2rem;
-   font-size: 3rem;
-   text-align: center;
-   color: beige;
-   background-color: rgb(110, 200, 64);
-}
-a{
-   text-decoration: none;
-   font-size: 1.5rem;
-   text-decoration: none;
-   padding: 30px;
-}
-main{
-  background-image: url(#./../../assets/imagenes/feriantes.jpg); 
-  margin: 1% 0 1% 0%;
-  background-size:cover;
-  }
-
-a{
-   font-size: 1.2rem;
-   text-decoration: none;
-   padding: 10px;
-   color: rgb(78, 35, 35);
-}
-
-#navBarId ul{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    padding: 1px ;
-
-}
-#navBarId li{
-   list-style: none;
- }
-
-body header nav a{
-    display: inline-block;
-    padding: 10px;
-    margin:0 2rem 0 2rem;
-    text-align:center;
-    background-color: rgb(120, 184, 115);
-    border: rgb(8, 104, 37) 1px solid;
-    border-radius: 20px; 
-}
-
-header a:hover {
-   border: white 2px solid;
-   border-radius: 20px; 
-   background-color: lightgrey;
-   cursor:pointer;
-}
-
-header{
-  background-image: url(./../../assets/imagenes/imagen1.jpg); 
+.imgEncabezado{
+  background-image: url(/feria/assets/imagenes/imagen1.jpg); 
   width: 100%;
   height: 180px;
   background-position: center;
   background-size:cover;
   color:rgb(230, 240, 231) ;
   text-align: center;
-  border-radius: 0.5rem;
 }
 
+head, footer{
+   background-color: lightblue;
+   color: rgb(78, 35, 35);
+   text-align: center;
+}
 
- .foto_portada{
-   margin: 10px;
-   border-radius: 5px;
+nav{
+   background-color: lightblue;
+   margin-bottom: 5vh;
+   padding: 1vh 0 1vh;
+}
+
+#navBarId ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding: 1px ;
+}
+
+#navBarId li{
+   list-style: none;
  }
 
- .contenedor con-sidebar{
-    background-image: url(./../../assets/imagenes/zapallitos.jpg);
-    background-position: center;
+.fa-bars, .fa-times, input[type="checkbox"]{
+   display:none;
+}
+
+h1{ 
+   padding: 5vh;
+   font-size: 2.5rem;
+   text-align: center;
+   color: rgb(78, 35, 35);
+   background-color: lightblue;
+}
+
+h2{
+   color: rgb(78, 35, 35);
+   text-align: center;
+}
+
+a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   padding: 3vh;
+   color: rgb(78, 35, 35);
+}
+a:hover{
+   color:rgb(78, 35, 35);
+}
+main{ 
+   background-image: url(#./../../assets/imagenes/feriantes.jpg); 
+   margin: 1% 0 1% 0%;
+   background-size:cover;
+}
+
+.contenedor_con_sidebar{
+   justify-content: center;
+   display: flex;
+   gap: 5px;
+}
+
+.cuerpo-principal {
+   flex-basis: calc(70% - 1rem);
+   text-align: center;
+}
+.sidebar {
+   flex-basis: calc(15% - 1rem);
+   text-align: center;
 }
 
  .comentario{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid lightblue;
+    text-align: center;
+    justify-content: space-around;
     border-radius: 20px;
-    width: 50%;
-    background-color:rgb(206, 230, 222);
-    margin:5px 25% ;
+    margin:5px ;
     padding: 10px;
-    color:rgb(119, 51, 4);
- }
-
- .carrousel{
-   align-items: center;
-   background-color: rgb(195, 196, 195);
-}
-
- .grid-container {
-   box-sizing: content-box;
-   display: grid;
-   grid-template-columns: auto auto auto auto;
-   justify-content: space-around;
-   margin: 10%;
-   gap: 20px;
- }
-
- .grid-container img{
-   height: 300px; 
-   width: 200px;
+    color:rgb(78, 35, 35);
  }
  
-main, footer{
-   background-color: lightblue;
-   border-radius: 0.5rem;
-   color: rgb(15, 15, 4);
-   text-align: center;
+iframe{
+   border: 2px solid rgb(78, 35, 35);
+   border-radius: 5px;
+   margin: 10vh;
 }
 
+@media (max-width: 480px) {
+   
+.fa-bars, .fa-times, input[type="checkbox"]{
+   display:block;
+}
+   #navBarId a {
+      text-decoration: none;
+      display: list-item;
+      max-width: 200px;
+    }
 
-@media (min-width: 480px) {
-   .con-sidebar {
-       display: grid;
-       grid-template-columns: 1fr 5fr;
-       column-gap: 4rem;
+    
+ #navBarId ul{
+   width: 100%;
+   display: list-item;
+   justify-content:flex-end;
+   padding: 1px ;
+} 
+      
+    #navBarId input[type="checkbox"], #navBarId .fa-bars, #navBarId .fa-times {
+      position: absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+    }
+    
+    #navBarId .fa-bars, #navBarId .fa-times {
+      font-size: 48px;
+      pointer-events: none;
+    }
+    
+    #navBarId input[type="checkbox"] {
+      opacity: 0;
+    }
+    
+    #navBarId {
+      color: white;
+      position: relative;
+      min-height: 48px;
+    }
+    
+    #navBarId nav {
+      display: none;
+    }
+    
+    #navBarId input:checked ~ nav {
+      display: block;
+    }
+    
+    #navBarId input:checked ~ .fa-bars {
+      display: none;
+    }
+    
+    #navBarId input:not(:checked) ~ .fa-times {
+      display: none;
+    }
+
+    
+.contenedor_con_sidebar{
+   justify-content: center;
+   display: block;
+   gap: 5px;
    }
-}
-.formulario
- {
-  margin: 1rem;
-  border : var(--border)
-  }
-   
-    .grid-container {
+
+   .grid-container {
+      box-sizing: content-box;
       display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: #2196F3;
-      padding: 10px;
-     
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+      margin: 2vh;
+      gap: 5px;
     }
-    
-    .grid-item {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-      
-    }   
+}
 
+@media (max-width: 1200px) {
    
-    iframe{
-      display:flex;
-      background-color: rgb(133, 133, 221);
-      padding: 2px;
-      margin: 10px 40px;
-      
-    }
-    .fiel{
-      display:flex;
-      width: 50%;
-      margin: 5px 30% ;
-    }
-    .fiel fieldset{
-      padding: 20px;
-      border:2px solid rgb(175, 163, 231);
-      border-radius: 50px;
-      background-color:rgb(238, 243, 194) ;
-      margin:10px;
-    }
+.grid-container {
+   box-sizing: content-box;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+   margin: 2vh;
+   gap: 5px;
+   }
 
-    .fiel fieldset legend{
-      border:2px solid rgb(167, 244, 148);
-      background:rgb(216, 250, 130);
-      border-radius: 20px;
-       
-
-    }
     
-    .formulario fieldset{
-      margin:10px 25%;
-      padding-left:70px;
-      border:2px solid rgb(105, 104, 19);
-      border-radius: 50px;
-      background:rgb(214, 229, 175);
-      width: 50%;
-      padding: 10px;;
-    }
-    .formulario fieldset legend{
+   .grid-container img{
+   height: 240px; 
+   width: 160px;
+   }
       
-      border:2px solid rgb(105, 104, 19);
-      background:rgb(216, 250, 130);
-      border-radius: 20px;
-    }
+}
 
 
-    #conteItemscarrousel{
-      border: 5px solid rgb(8, 77, 10);
-      height: 400px;
-      width: 60%;
-      overflow: hidden;
-      border-radius:50% ;
-      margin: 1rem;
-      margin-left: 20%;
-    }
-    #conteItemscarrousel:hover{
-      border-radius: 0% ;
-      transition-delay: linear;
-      transition-duration: 2s;
-      transition-timing-function: ease;
-  }
-      .itemCarrousel {
-        
-        height: 100%;
-        width: 100%;
-        position: relative;
-      }
-    
-      .tarjetaCarrousel img{
-        
-        width: 100%;
-        height: 100%;
-      }
-    
-      .flechasCarrousel{
-        
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-      }
-      .flechasCarrousel i{
-        color: rgb(246, 242, 242);
-     
-      }
-      
-      .tienda{
-        color:rgb(8, 9, 7);
-        background-color: antiquewhite;
-      }
        
