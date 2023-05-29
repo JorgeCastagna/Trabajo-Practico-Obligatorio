@@ -18,3 +18,7 @@ input[type=submit]{
     outline-style:groove;
     cursor: pointer;
 }
+
+input[type=submit]:hover{
+    background-color:blue;
+}
