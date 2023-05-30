@@ -1,26 +1,3 @@
-/*<<<<<< HEAD*/
-
-
-#grid-container {
-    box-sizing: content-box;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-around;
-    margin: 2vh;
-    gap: 5px;
-  }
- 
- #grid-container img{
-    height: 250px; 
-    width: 160px;
-    border-radius: 5px;
-  }
-
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 2rem;}
 
 *{
     margin: 0;
@@ -76,7 +53,6 @@ a{
     color:rgb(236, 242, 236);
 }
 
-/*<<<<<< HEAD*/
 .grid-item {
     text-align: center; 
   }   

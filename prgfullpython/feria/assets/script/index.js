@@ -11,7 +11,7 @@ var barra = `
                 <li><a href="/feria/assets/pantallas/registrarse.html">Registrarse</a></li>
                 <li><a href="/feria/assets/pantallas/contacto.html">Contacto</a></li>
                 <li><a href="/feria/assets/pantallas/sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="/feria/assets/pantallas/carrito_de_compras.html">Carrito de compras</a></li>
+                <!--<li><a href="/feria/assets/pantallas/carrito_de_compras.html">Carrito de compras</a></li>-->
                 </ul>
         </nav>
 </div>`
