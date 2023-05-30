@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*<<<<<< HEAD*/
 
 
 #grid-container {
@@ -20,14 +20,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 2rem;
-=======
+    gap: 2rem;}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: rgb(191, 182, 182);
->>>>>>> 460c3a342a2863340775e745f0581b6a01a7d60c
+
 }
 body{
     padding: 50px; 
@@ -76,52 +76,14 @@ a{
     color:rgb(236, 242, 236);
 }
 
-<<<<<<< HEAD
+/*<<<<<< HEAD*/
 .grid-item {
     text-align: center; 
   }   
   
-  @media (max-width: 1200px) {
-      
-      #grid-container {
-          box-sizing: content-box;
-          display: grid;
-          grid-template-columns: auto auto auto;
-          justify-content: space-around;
-          margin: 2vh;
-          gap: 5px;
-        }
-        
-        
-      }
-      
-    
-
- @media (max-width: 450px) {
-      
-  #grid-container {
-  box-sizing: content-box;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-around;
-  margin: 2vh;
-  gap: 5px;
-  }
   
-  #grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 2rem;
-  }
-  
-  #grid-container img{
-      height: 240px; 
-      width: 160px;
-  } 
-}
 
-=======
+
 /*.button a{
     display:flex;
     
@@ -191,4 +153,42 @@ a{
     filter: invert(100%);
   
 }
->>>>>>> 460c3a342a2863340775e745f0581b6a01a7d60c
+
+@media (max-width: 1200px) {
+      
+    #grid-container {
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin: 2vh;
+        gap: 5px;
+      }
+      
+      
+    }
+    
+    @media (max-width: 450px) {
+    
+        #grid-container {
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        margin: 2vh;
+        gap: 5px;
+        }
+        
+        #grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          gap: 2rem;
+        }
+        
+        #grid-container img{
+            height: 240px; 
+            width: 160px;
+        } 
+        }  
+

@@ -40,7 +40,7 @@ nav{
    list-style: none;
  }
 
-#navBarId .fa-bars, #navBarId .fa-times, #navBarId input[type="checkbox"]{
+ #navBarId .fa-bars, #navBarId .fa-times, #navBarId input[type="checkbox"]{
    display:none;
 }
 
@@ -48,9 +48,9 @@ h1{
    padding: 5vh;
    font-size: 4rem;
    text-align: center;
-   color: beige;
+   color:beige;
+   
 }
-
 h2{
    color: rgb(78, 35, 35);
    text-align: center;
@@ -103,9 +103,9 @@ main{
     margin: 10vh;
    }
    
-@media (max-width: 1200px) {
-   
-   #grid-container {
+   @media (max-width: 1200px) {
+      
+   .grid-container {
       box-sizing: content-box;
       display: grid;
       grid-template-columns: auto auto auto;
@@ -113,75 +113,75 @@ main{
       margin: 2vh;
       gap: 5px;
       }
-
-      
-   #grid-container img{
-   height: 240px; 
-   width: 160px;
+   
+       
+      .grid-container img{
+      height: 240px; 
+      width: 160px;
+      }
+         
    }
-      
-}
    
 @media (max-width: 480px) {
    
    #navBarId .fa-bars, #navBarId .fa-times, #navBarId input[type="checkbox"]{
    display:block;
 }
-#navBarId a {
-   text-decoration: none;
-   display: list-item;
-   max-width: 200px;
-   }
+   #navBarId a {
+      text-decoration: none;
+      display: list-item;
+      max-width: 200px;
+    }
 
-   
-#navBarId ul{
+    
+ #navBarId ul{
    width: 100%;
    display: list-item;
    justify-content:flex-end;
    padding: 1px ;
-   } 
+} 
       
-#navBarId input[type="checkbox"], #navBarId .fa-bars, #navBarId .fa-times {
-   position: absolute;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   right: 0;
-   top: 0;
-   width: 48px;
-   height: 48px;
-   }
+    #navBarId input[type="checkbox"], #navBarId .fa-bars, #navBarId .fa-times {
+      position: absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+    }
     
-#navBarId .fa-bars, #navBarId .fa-times {
-   font-size: 48px;
-   pointer-events: none;
-   }
+    #navBarId .fa-bars, #navBarId .fa-times {
+      font-size: 48px;
+      pointer-events: none;
+    }
     
-#navBarId input[type="checkbox"] {
-   opacity: 0;
-   }
+    #navBarId input[type="checkbox"] {
+      opacity: 0;
+    }
     
-#navBarId {
-   color: white;
-   position: relative;
-   min-height: 48px;
-   }
+    #navBarId {
+      color: white;
+      position: relative;
+      min-height: 48px;
+    }
     
-#navBarId nav {
-   display: none;
-}
+    #navBarId nav {
+      display: none;
+    }
     
-#navBarId input:checked ~ nav {
-   display: block;
-}
-
-#navBarId input:checked ~ .fa-bars {
-   display: none;
-}
-
-#navBarId input:not(:checked) ~ .fa-times {
-   display: none;
-}
+    #navBarId input:checked ~ nav {
+      display: block;
+    }
+    
+    #navBarId input:checked ~ .fa-bars {
+      display: none;
+    }
+    
+    #navBarId input:not(:checked) ~ .fa-times {
+      display: none;
+    }
 
     
 .contenedor_con_sidebar{
@@ -190,14 +190,14 @@ main{
    gap: 5px;
    }
 
-#grid-container {
-   box-sizing: content-box;
-   display: grid;
-   grid-template-columns: auto;
-   justify-content: space-around;
-   margin: 2vh;
-   gap: 5px;
-   }
+   .grid-container {
+      box-sizing: content-box;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-around;
+      margin: 2vh;
+      gap: 5px;
+    }
 }
 
 
