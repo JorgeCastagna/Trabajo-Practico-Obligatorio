@@ -1,0 +1,56 @@
+[
+    {"cod":"ela-01",
+    "articulo":"Yerba",
+    "descripcion":"1/2 kg",
+    "img":"/feria/assets/imagenes/yerba.jpg",
+    "precio":"$600"}
+,
+
+    {"cod":"dul-01",
+    "articulo":"Dulce de mamon",
+    "descripcion":"frasco",
+    "img":"/feria/assets/imagenes/mamon.jpg",
+    "precio":"$1,200"}
+,
+    {"cod":"dul-02",
+    "articulo":"Dulce de guayaba",
+    "descripcion":"frasco",
+    "img":"/feria/assets/imagenes/Guayaba.jpg",
+    "precio":"$800"}
+,
+    {"cod":"ela-02",
+    "articulo":"Turron de mani",
+    "descripcion":"porcion",
+    "img":"/feria/assets/imagenes/turron de mani.jpg",
+    "precio":"$200"}
+,
+    {"cod":"ela-03",
+    "articulo":"Queso",
+    "descripcion":"pieza",
+    "img":"/feria/assets/imagenes/quesoscaseros.jpg",
+    "precio":"$3,000"}
+,
+    {"cod":"veg-01",
+    "articulo":"Mandioca",
+    "descripcion":"1 kg",
+    "img":"/feria/assets/imagenes/mandioca2.jpg",
+    "precio":"$400"}
+,
+    {"cod":"veg-02",
+    "articulo":"Berenjena",
+    "descripcion":"unidad",
+    "img":"/feria/assets/imagenes/berenjena.jpg",
+    "precio":"$150"}
+,
+    {"cod":"veg-03",
+    "articulo":"Cebollita de verdeo",
+    "descripcion":"mazo"
+    ,"img":"/feria/assets/imagenes/Cebollita de verdeo.jpg",
+    "precio":"$100"}
+,
+    {"cod":"veg-04",
+    "articulo":"Acelga",
+    "descripcion":"mazo",
+    "img":"/feria/assets/imagenes/acelgas.jpg",
+    "precio":"$300"}
+]

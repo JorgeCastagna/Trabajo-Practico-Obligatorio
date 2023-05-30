@@ -1,0 +1,24 @@
+.formulario{
+    border: solid 2px rgb(78, 35, 35);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(78, 35, 35);
+}
+
+input[type=submit]{
+    background-color: rgb(7, 128, 168);
+    height: 10vh;
+    width: 100%;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    outline-color: rgb(7, 128, 168);
+    outline-style:groove;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color:blue;
+}

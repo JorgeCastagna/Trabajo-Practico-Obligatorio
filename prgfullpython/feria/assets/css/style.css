@@ -1,43 +1,204 @@
-a{text-decoration: none;
-
+* {
+   
+   box-sizing: border-box;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(78, 35, 35);
+   
 }
-li{
-    background-color: rgb(245, 232, 159);
-    display: inline-block;
+
+.imgEncabezado{
+  background-image: url(/feria/assets/imagenes/imagen1.jpg); 
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size:cover;
+  color:rgb(230, 240, 231) ;
+  text-align: center;
+}
+
+head, footer{
+   background-color: lightblue;
+   color: rgb(78, 35, 35);
+   text-align: center;
+}
+
+nav{
+   background-color: lightblue;
+   margin-bottom: 2vh;
+   padding: 0.5vh 0 0.5vh;
+}
+
+#navBarId ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding: 1px ;
+}
+
+#navBarId li{
+   list-style: none;
+ }
+
+ #navBarId .fa-bars, #navBarId .fa-times, #navBarId input[type="checkbox"]{
+   display:none;
+}
+
+h1{ 
+   padding: 5vh;
+   font-size: 4rem;
+   text-align: center;
+   color:beige;
+   
+}
+h2{
+   color: rgb(78, 35, 35);
+   text-align: center;
+}
+
+a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   padding: 3vh;
+   color: rgb(78, 35, 35);
+}
+a:hover{
+   color:rgb(78, 35, 35);
+}
+main{ 
+   background-image: url(#./../../assets/imagenes/feriantes.jpg); 
+   margin: 1% 0 1% 0%;
+   background-size:cover;
+}
+
+.contenedor_con_sidebar{
+   justify-content: center;
+   display: flex;
+   gap: 5px;
+}
+
+.cuerpo-principal {
+   flex-basis: calc(70% - 1rem);
+   text-align: center;
+}
+.sidebar {
+   flex-basis: calc(15% - 1rem);
+   text-align: center;
+}
+
+.comentario{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: space-around;
+   border-radius: 20px;
+   margin:5px ;
     padding: 10px;
-    margin:0 2rem 0 2rem;
-    color: rgb(244, 235, 235);
-    border-radius: 10px;
-    border: 1px solid black;
-    text-align:center;
-}
-
-li:hover {
-   background-color: #e9e062;
-   cursor:pointer;
-
-}
-body{
-    background-color:#cfe6cf;
-    margin: 0; 
-   }
-h1{text-align: center;}
+    color:rgb(78, 35, 35);
+ }
  
-main{
-    height:10%;
-
- }
- .principal{
-    background-image: url(./assets/imagenes/IMG-20180104-WA0000.jpg);
-    background-position: center;
+ iframe{
+    border: 2px solid rgb(78, 35, 35);
+    border-radius: 5px;
+    margin: 10vh;
+   }
+   
+   @media (max-width: 1200px) {
+      
+   .grid-container {
+      box-sizing: content-box;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+      margin: 2vh;
+      gap: 5px;
+      }
+   
+       
+      .grid-container img{
+      height: 240px; 
+      width: 160px;
+      }
+         
+   }
+   
+@media (max-width: 480px) {
+   
+   #navBarId .fa-bars, #navBarId .fa-times, #navBarId input[type="checkbox"]{
+   display:block;
 }
- .comentario{
-    border:1px solid black;
-    border-radius: 20px;
-    height: 500px;
-    width: 500px;
-    background-color:rgb(206, 230, 222);
-    left:35%;
-    position:fixed
+   #navBarId a {
+      text-decoration: none;
+      display: list-item;
+      max-width: 200px;
+    }
 
- }
+    
+ #navBarId ul{
+   width: 100%;
+   display: list-item;
+   justify-content:flex-end;
+   padding: 1px ;
+} 
+      
+    #navBarId input[type="checkbox"], #navBarId .fa-bars, #navBarId .fa-times {
+      position: absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+    }
+    
+    #navBarId .fa-bars, #navBarId .fa-times {
+      font-size: 48px;
+      pointer-events: none;
+    }
+    
+    #navBarId input[type="checkbox"] {
+      opacity: 0;
+    }
+    
+    #navBarId {
+      color: white;
+      position: relative;
+      min-height: 48px;
+    }
+    
+    #navBarId nav {
+      display: none;
+    }
+    
+    #navBarId input:checked ~ nav {
+      display: block;
+    }
+    
+    #navBarId input:checked ~ .fa-bars {
+      display: none;
+    }
+    
+    #navBarId input:not(:checked) ~ .fa-times {
+      display: none;
+    }
+
+    
+.contenedor_con_sidebar{
+   justify-content: center;
+   display: block;
+   gap: 5px;
+   }
+
+   .grid-container {
+      box-sizing: content-box;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-around;
+      margin: 2vh;
+      gap: 5px;
+    }
+}
+
+
+       

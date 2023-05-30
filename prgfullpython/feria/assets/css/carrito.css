@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(191, 182, 182);
+
+}
+body{
+    padding: 50px; 
+    background-color: rgb(28, 102, 92);
+    text-align: center;
+
+}
+main{
+    font-family: "space grotesk", sans-serif;
+    background-color: rgb(147, 206, 198);
+    padding-top: 70px;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px;
+    font-weight: 700;
+}
+img{
+    width: 300px;
+    height:340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+
+}
+/*header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50x;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+} */
+
+a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    margin:0 2rem 0 2rem;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(236, 242, 236);
+}
+
+.grid-item {
+    text-align: center; 
+  }   
+  
+  
+
+
+/*.button a{
+    display:flex;
+    
+    background-color: rgb(146, 217, 154);
+    width: 122px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    
+    color: black;
+}*/
+.carrito{
+    width: 45px;
+    height: auto;
+}
+
+.marco{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.marco>div{
+    box-shadow: 0px 0px 15px 0pc black ;
+    background-color: rgb(36, 31, 31);
+    border-radius: 20px;
+}
+.marco>div:hover{
+    background-color: rgb(86, 51, 8);
+    transform:scale(1.05)
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25 px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion button{
+    background-color: darkslategray;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17 px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    filter: invert(100%);
+  
+}
+
+@media (max-width: 1200px) {
+      
+    #grid-container {
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin: 2vh;
+        gap: 5px;
+      }
+      
+      
+    }
+    
+    @media (max-width: 450px) {
+    
+        #grid-container {
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        margin: 2vh;
+        gap: 5px;
+        }
+        
+        #grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          gap: 2rem;
+        }
+        
+        #grid-container img{
+            height: 240px; 
+            width: 160px;
+        } 
+        }  
+
